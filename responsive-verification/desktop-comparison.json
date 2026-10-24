@@ -1,0 +1,756 @@
+[
+  {
+    "page": "index",
+    "width": 1440,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 53,
+      "mean": [
+        0.03847030683559442,
+        0.02360947602496543,
+        0.04862699480509773
+      ],
+      "bounds": [
+        0,
+        0,
+        1440,
+        1802
+      ]
+    },
+    "before": {
+      "h1": {
+        "x": 105,
+        "y": 139,
+        "width": 750.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 89,
+        "y": 928.1875,
+        "width": 1262,
+        "height": 53,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 57,
+        "y": 85,
+        "width": 1326,
+        "height": 810,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 57,
+        "y": 928.1875,
+        "width": 1326,
+        "height": 551.359375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 57,
+        "y": 1479.546875,
+        "width": 1326,
+        "height": 494.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 270,
+        "y": 1973.640625,
+        "width": 900,
+        "height": 662.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 57,
+        "y": 2635.734375,
+        "width": 1326,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 105,
+        "y": 139,
+        "width": 750.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 89,
+        "y": 928.1875,
+        "width": 1262,
+        "height": 53,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 57,
+        "y": 85,
+        "width": 1326,
+        "height": 810,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 57,
+        "y": 928.1875,
+        "width": 1326,
+        "height": 551.359375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 57,
+        "y": 1479.546875,
+        "width": 1326,
+        "height": 494.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 270,
+        "y": 1973.640625,
+        "width": 900,
+        "height": 662.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 57,
+        "y": 2635.734375,
+        "width": 1326,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "menu",
+    "width": 1440,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 253,
+      "mean": [
+        1.924297839506173,
+        1.7495108024691357,
+        1.8779537037037037
+      ],
+      "bounds": [
+        415,
+        69,
+        1352,
+        665
+      ]
+    },
+    "before": {
+      "h1": {
+        "x": 129.8125,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 56,
+        "y": 36,
+        "width": 1328,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 129.8125,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 56,
+        "y": 36,
+        "width": 1328,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    }
+  },
+  {
+    "page": "contact",
+    "width": 1440,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 2,
+      "mean": [
+        0.04175,
+        0.030650462962962963,
+        0.0624945987654321
+      ],
+      "bounds": [
+        0,
+        0,
+        1440,
+        900
+      ]
+    },
+    "before": {
+      "h2": {
+        "x": 342,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 270,
+        "y": 36,
+        "width": 900,
+        "height": 786.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 342,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 270,
+        "y": 36,
+        "width": 900,
+        "height": 786.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "login",
+    "width": 1440,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 0,
+      "mean": [
+        0,
+        0,
+        0
+      ],
+      "bounds": null
+    },
+    "before": {
+      "h2": {
+        "x": 560,
+        "y": 105.203125,
+        "width": 320,
+        "height": 40,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 520,
+        "y": 36,
+        "width": 400,
+        "height": 585.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 560,
+        "y": 105.203125,
+        "width": 320,
+        "height": 40,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 520,
+        "y": 36,
+        "width": 400,
+        "height": 585.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "index",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 88,
+      "mean": [
+        0.06232463701087566,
+        0.05994593704451172,
+        0.06584083137122995
+      ],
+      "bounds": [
+        0,
+        0,
+        1920,
+        2083
+      ]
+    },
+    "before": {
+      "h1": {
+        "x": 259,
+        "y": 227.3125,
+        "width": 922.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 243,
+        "y": 928.1875,
+        "width": 1434,
+        "height": 53,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 211,
+        "y": 85,
+        "width": 1498,
+        "height": 810,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 211,
+        "y": 928.1875,
+        "width": 1498,
+        "height": 551.359375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 211,
+        "y": 1479.546875,
+        "width": 1498,
+        "height": 494.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 510,
+        "y": 1973.640625,
+        "width": 900,
+        "height": 662.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 211,
+        "y": 2635.734375,
+        "width": 1498,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 259,
+        "y": 227.3125,
+        "width": 922.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 243,
+        "y": 928.1875,
+        "width": 1434,
+        "height": 53,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 211,
+        "y": 85,
+        "width": 1498,
+        "height": 810,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 211,
+        "y": 928.1875,
+        "width": 1498,
+        "height": 551.359375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 211,
+        "y": 1479.546875,
+        "width": 1498,
+        "height": 494.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 510,
+        "y": 1973.640625,
+        "width": 900,
+        "height": 662.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 211,
+        "y": 2635.734375,
+        "width": 1498,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "menu",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 253,
+      "mean": [
+        1.7875706018518518,
+        1.4500642361111111,
+        1.727964699074074
+      ],
+      "bounds": [
+        0,
+        0,
+        1920,
+        900
+      ]
+    },
+    "before": {
+      "h1": {
+        "x": 354.46875,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 210,
+        "y": 36,
+        "width": 1500,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 354.46875,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 210,
+        "y": 36,
+        "width": 1500,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    }
+  },
+  {
+    "page": "contact",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 2,
+      "mean": [
+        0.05220486111111111,
+        0.03427430555555556,
+        0.07414583333333333
+      ],
+      "bounds": [
+        0,
+        0,
+        1920,
+        900
+      ]
+    },
+    "before": {
+      "h2": {
+        "x": 582,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 510,
+        "y": 36,
+        "width": 900,
+        "height": 786.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 582,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 510,
+        "y": 36,
+        "width": 900,
+        "height": 786.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "login",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 0,
+      "mean": [
+        0,
+        0,
+        0
+      ],
+      "bounds": null
+    },
+    "before": {
+      "h2": {
+        "x": 800,
+        "y": 105.203125,
+        "width": 320,
+        "height": 40,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 760,
+        "y": 36,
+        "width": 400,
+        "height": 585.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 800,
+        "y": 105.203125,
+        "width": 320,
+        "height": 40,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 760,
+        "y": 36,
+        "width": 400,
+        "height": 585.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  }
+]

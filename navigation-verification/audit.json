@@ -1,0 +1,181 @@
+[
+  {
+    "name": "index",
+    "width": 390,
+    "state": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 216
+    },
+    "short": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 216
+    },
+    "errors": []
+  },
+  {
+    "name": "menu",
+    "width": 390,
+    "state": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 216
+    },
+    "short": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 216
+    },
+    "errors": []
+  },
+  {
+    "name": "contact",
+    "width": 390,
+    "state": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 216
+    },
+    "short": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 216
+    },
+    "errors": []
+  },
+  {
+    "name": "login",
+    "width": 390,
+    "state": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": null
+    },
+    "short": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": null
+    },
+    "errors": []
+  },
+  {
+    "name": "index",
+    "width": 1440,
+    "state": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [
+        "DIV.reviews-card: block in reviews-section",
+        "DIV.reviews-card: block in reviews-section"
+      ],
+      "overlaps": [
+        ".hero .left / .about-us"
+      ],
+      "headerHeight": 139
+    },
+    "short": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [
+        "DIV.reviews-card: block in reviews-section",
+        "DIV.reviews-card: block in reviews-section"
+      ],
+      "overlaps": [
+        ".hero .left / .about-us",
+        ".hero .right / .about-us"
+      ],
+      "headerHeight": 139
+    },
+    "errors": []
+  },
+  {
+    "name": "menu",
+    "width": 1440,
+    "state": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 104
+    },
+    "short": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 104
+    },
+    "errors": []
+  },
+  {
+    "name": "contact",
+    "width": 1440,
+    "state": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 139
+    },
+    "short": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": 139
+    },
+    "errors": []
+  },
+  {
+    "name": "login",
+    "width": 1440,
+    "state": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": null
+    },
+    "short": {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "clipped": [],
+      "overlaps": [],
+      "headerHeight": null
+    },
+    "errors": []
+  }
+]

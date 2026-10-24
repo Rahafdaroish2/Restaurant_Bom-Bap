@@ -1,0 +1,42 @@
+index 1440px initial: REVIEW: screenshot differs, maximum channel difference 17/255
+index 1440px: categories, favorite and keyboard hero selection match
+menu 1440px initial: identical screenshot
+menu 1440px salads: identical screenshot
+menu 1440px desserts: identical screenshot
+menu 1440px drinks: identical screenshot
+menu 1440px snacks: identical screenshot
+menu 1440px Meals: identical screenshot
+menu 1440px: pagination including bounds matches
+login 1440px initial: identical screenshot
+login 1440px register: identical screenshot
+login 1440px login: identical screenshot
+contact 1440px initial: identical screenshot
+contact 1440px baseline errors retained: L is not defined
+index 768px initial: REVIEW: screenshot differs, maximum channel difference 5/255
+index 768px: categories, favorite and keyboard hero selection match
+menu 768px initial: identical screenshot
+menu 768px salads: identical screenshot
+menu 768px desserts: identical screenshot
+menu 768px drinks: identical screenshot
+menu 768px snacks: identical screenshot
+menu 768px Meals: REVIEW: screenshot differs, maximum channel difference 112/255
+menu 768px: pagination including bounds matches
+login 768px initial: identical screenshot
+login 768px register: identical screenshot
+login 768px login: identical screenshot
+contact 768px initial: identical screenshot
+contact 768px baseline errors retained: L is not defined
+index 390px initial: identical screenshot
+index 390px: categories, favorite and keyboard hero selection match
+menu 390px initial: identical screenshot
+menu 390px salads: identical screenshot
+menu 390px desserts: identical screenshot
+menu 390px drinks: identical screenshot
+menu 390px snacks: identical screenshot
+menu 390px Meals: identical screenshot
+menu 390px: pagination including bounds matches
+login 390px initial: identical screenshot
+login 390px register: identical screenshot
+login 390px login: identical screenshot
+contact 390px initial: identical screenshot
+contact 390px baseline errors retained: L is not defined

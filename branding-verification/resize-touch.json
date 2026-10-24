@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "index",
+    "menu",
+    "contact"
+  ],
+  "widths": [
+    1023,
+    1024,
+    1025,
+    1023,
+    900,
+    1100,
+    1101,
+    600,
+    430,
+    320,
+    1440,
+    390
+  ],
+  "focusTransitions": "passed",
+  "result": "passed"
+}

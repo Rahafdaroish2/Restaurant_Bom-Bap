@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Contact UI</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="contact.css?v=7e1dac566550">
+    <link rel="stylesheet" href="style.css?v=eb75c869b2bf">
+    <link rel="stylesheet" href="./responsive.css?v=92118b8484cc">
+  <script src="./navigation.js?v=5fbc10006c61" defer></script>
+</head>
+  <body>
+  <div class="contact-container" id="Contact">
+      <header class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="logo">
+      <img src="./images/Vetores_de_Chef_-_Baixe_vetores_grátis_de_alta_qualidade_do_Freepik___Freepik-removebg-preview.png" alt="Logo">
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation"><span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
+    <div class="nav-panel" id="mobile-navigation">
+    <nav class="nav-links" aria-label="Navigation links">
+      <a href="./index.html">Home</a>
+      <a href="./menu.html">Menu</a>
+      <a href="./index.html">About Us</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="./login.html"> <button class="btn-login" aria-label="Login">Login</button></a>
+      <a href="./login.html"><button class="btn-Regiter" aria-label="Register">Register</button></a>
+      <button class="btn-reserve" aria-label="Reserve Table">Reserve</button>
+    </div>
+   </div>
+  </header>
+      <div class="form-section">
+        <h2>Reserve Your Table Now.</h2>
+        <p>
+          For bookings or inquiries, contact us. We promise to respond within 24
+          hours.
+        </p>
+
+        <form action="#" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Full Name" required />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="Your Message..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="info-map-section">
+        <div id="map"></div>
+
+        <div class="curved-split"></div>
+
+        <div class="info-cards-wrapper">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Address</strong>
+              <p>Al-Hamidiyah Street, Bab Touma, Damascus, Syria.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <strong>Contact Us</strong>
+              <p>+963 11 234 5678<br />contact@syrianfood.com</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Working Hours</strong>
+              <p>Daily: 1:00 PM - 12:00 AM Midnight</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+  </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="./contact.js?v=5649483eb89e"></script>
+    
+  </body>
+</html>

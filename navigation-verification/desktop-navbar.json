@@ -1,0 +1,47 @@
+[
+  {
+    "name": "index",
+    "width": 1024,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "menu",
+    "width": 1024,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "contact",
+    "width": 1024,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "index",
+    "width": 1280,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "menu",
+    "width": 1280,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "contact",
+    "width": 1280,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "index",
+    "width": 1440,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "menu",
+    "width": 1440,
+    "result": "identical geometry and computed styles"
+  },
+  {
+    "name": "contact",
+    "width": 1440,
+    "result": "identical geometry and computed styles"
+  }
+]

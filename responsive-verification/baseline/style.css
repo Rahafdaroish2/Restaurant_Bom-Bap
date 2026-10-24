@@ -1,0 +1,1548 @@
+:root {
+/* الألوان الأساسية */
+--color-red: #d62828;
+--color-orange: #fdab54;
+--color-yellow: #f6f086;
+--color-green: #70c37d;
+--color-black: #2e2e2e;
+--color-white: #fff8f0;
+--color-overlay: rgba(0, 0, 0, 0.4);
+--bg: rgba(255, 255, 255, 0.3);
+/* ألوان إضافية */
+--color-accent1: #ff7e5f;
+--color-accent2: #feb47b;
+--color-gold: #ffd700;
+--color-silver: #bbb;
+--color-gray: #666;
+--color-darkgray: #111;
+--color-lightgray: rgba(255, 255, 255, 0.05);
+
+/* ألوان خلفيات وأزرار */
+--bg-icon: #f77f00;
+--bg-button: #f77f00;
+--color-btn: black;
+
+/* ألوان النصوص */
+--color-p1: white;
+--color-p2: rgb(0, 0, 0);
+
+/* الفونت سايز */
+--font-h1: 4rem;
+--font-h2: 2.5rem;
+--font-h3: 1.8rem;
+--font-p1: 1.4rem;
+--font-p2: 1.2rem;
+--font-icon: 1.5rem;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Cairo", "Poppins", sans-serif;
+  background: var(--color-white);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.25rem;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("./images/about/KuroMoon\ 黒문\,\ São\ Paulo\,\ SP\,\ Brasil\ \(1\).jpg")
+    center/cover no-repeat;
+  filter: blur(10px) brightness(0.5);
+  z-index: -1;
+}
+.site {
+  width: 93.75rem;
+  max-width: calc(100% - 40px);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  /* padding: 28px 28px; */
+  position: relative;
+  overflow: visible;
+  border: 1px solid var(--bg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeSlideDown 1s forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* === Logo styles === */
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.logo img:hover {
+  transform: rotate(360deg) scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+}
+/* === Navigation links === */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-black);
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover {
+  color: var(--color-accent1);
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+/* === Buttons styles === */
+.nav-actions button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: var(--color-white);
+  font-weight: bold;
+  margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.nav-actions button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 126, 95, 0.6);
+}
+.nav-actions button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: var(--bg);
+  transform: skewX(-25deg);
+  transition: all 0.5s ease;
+}
+.nav-actions button:hover::before {
+  left: 125%;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  gap: 1.2rem;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative;
+  height: 90vh;
+}
+
+.left {
+  padding: 3rem;
+}
+h1.hero-title {
+  font-size: var(--font-h1);
+  line-height: 1.05;
+  margin: 6px 0 10px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: var(--color-black);
+}
+p.lead {
+  font-size: var(--font-p1);
+  margin: 22px 0 50px;
+  width: 85%;
+}
+.cards {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card {
+  border-radius: 12px;
+  width: 9rem;
+  padding: 12px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(18, 18, 18, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: transform 0.28s cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 0.28s;
+  position: relative;
+  animation: cardIn 0.6s forwards;
+}
+.cards .card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.cards .card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.cards .card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.cards .card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.cards .card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes cardIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.card .icon-wrap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.03);
+}
+.card span.label {
+  font-size: var(--font-p2);
+  font-weight: 600;
+  margin-top: 8px;
+  color: var(--color-yellow);
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+.card.active {
+  outline: 3px solid rgba(103, 181, 121, 0.18);
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.14);
+}
+.card img {
+  border-radius: 30%;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  align-items: center;
+  width: 92%;
+}
+.zip {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: var(--color-white);
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.zip input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+  width: 100%;
+}
+.search-btn {
+  background: var(--color-orange);
+  color: var(--color-white);
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.right {
+  position: relative;
+  height: 22.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-circle {
+  position: absolute;
+  left: 25px;
+  width: 26rem;
+  height: 26rem;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  background: linear-gradient(180deg, var(--color-orange), #f4be72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(20px);
+  z-index: 1;
+  box-shadow: 0 12px 36px rgba(246, 107, 107, 0.16);
+  border: 3px solid rgba(255, 255, 255, 0.35);
+}
+.big-circle .vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: 800;
+  font-size: var(--font-p2);
+  color: var(--color-white);
+  letter-spacing: 4px;
+  transform: rotate(12deg);
+  opacity: 0.95;
+}
+
+.plate-frame {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.15)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  overflow: visible;
+  margin-right: 120px;
+}
+.plate {
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border: 8px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(180deg, var(--color-white), #fff9);
+}
+.plate img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.2, 0.9, 0.2, 1), opacity 0.6s ease;
+  transform: translateX(0);
+}
+.plate:hover img {
+  transform: scale(1.05) rotate(2deg);
+  transition: transform 0.9s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+.anim-out {
+  transform: scale(0.95) rotate(-5deg);
+  opacity: 0;
+}
+.anim-in {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+  transition: transform 0.8s cubic-bezier(0.2, 0.9, 0.2, 1), opacity 0.6s ease;
+}
+
+.about-us {
+  padding: 0 2rem;
+  color: var(--color-white);
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-about {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.main-image-wrapper {
+  position: relative;
+  width: 350px;
+  border-radius: 12px; /* Animation */
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideInLeft 1s ease forwards;
+}
+.main-about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  border: 2px solid var(--color-orange);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+.main-about-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+/* Overlay circle image */
+.overlay-circle-image {
+  position: absolute;
+  bottom: -30px;
+  right: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid var(--color-yellow);
+  object-fit: cover;
+  z-index: 2;
+}
+/* Experience card */
+.experience-card {
+  position: absolute;
+  top: 40px;
+  left: 300px;
+  background-color: var(--color-darkgray);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-yallo);
+  border-left: 1px solid var(--color-yellow);
+  border-top: 1px solid var(--color-orange);
+  border-right: 1px solid var(--color-orange);
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.7) translateY(-20px);
+  animation: popIn 1s ease forwards;
+  animation-delay: 0.6s;
+}
+.right-about {
+  flex: 1;
+  padding: 0rem;
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideInRight 1s ease forwards;
+  animation-delay: 0.8s;
+}
+.section-label,
+.featured-dishes-h2 {
+  background: linear-gradient(to right, #f4be72, var(--color-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--font-h2);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.features li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-black);
+} /* Buttons */
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.order-btn,
+.read-more-btn {
+  background: linear-gradient(180deg, var(--color-orange), #f4be72);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.order-btn:hover,
+.read-more-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+  background: linear-gradient(180deg, #f4be72, var(--color-orange));
+} /* Animations */
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+.featured-dishes{
+  padding: 2rem 2rem;
+}
+.featured-dishes-h2,
+.reviews-h2 {
+  background: linear-gradient(to right, #f4be72, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  text-align: center;
+  /* margin-bottom: 20px; */
+  padding: 2rem;
+}
+
+.featured-dishes-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 12rem;
+  padding: 2rem;
+}
+
+.featured-dishes-category-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--color-black);
+  transition: color 0.3s;
+}
+
+.featured-dishes-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gray);
+  background: var(--color-white);
+  transition: 0.3s;
+}
+
+.featured-dishes-category-btn.active {
+  color: var(--color-orange);
+  font-weight: bold;
+}
+
+.featured-dishes-category-btn.active .featured-dishes-circle {
+  background: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.featured-dishes-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.featured-dishes-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+/* الكارد */
+.featured-dishes-card {
+  width: 250px;
+  height: 250px;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(255, 165, 0, 0.3);
+  padding: 12px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  background-size: cover;
+  background-position: center;
+}
+
+/* الصورة نص الكارد */
+.featured-dishes-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* النصوص */
+.featured-dishes-card h3 {
+  margin: 120px 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.featured-dishes-card p {
+  color: var(--color-silver);
+  margin: 2px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* السعر والقلب جنب بعض */
+.featured-dishes-price {
+  font-weight: bold;
+  color: var(--color-darkgray);
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.featured-dishes-heart {
+  font-size: 18px;
+  color: var(--color-silver);
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+  vertical-align: middle;
+}
+
+.featured-dishes-heart:hover {
+  color: var(--color-red);
+  transform: scale(1.3);
+}
+
+.featured-dishes-heart.active {
+  color: var(--color-red);
+}
+
+.featured-dishes-card:nth-child(1),
+.featured-dishes-card:nth-child(4) {
+  margin-top: 0;
+}
+
+.featured-dishes-card:nth-child(2),
+.featured-dishes-card:nth-child(3) {
+  margin-top: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- الأساسيات اللي عندك ما غيرتها --- */
+.reviews-section {
+max-width: 900px;
+margin: 0 auto;
+padding: 1rem 0;
+overflow: hidden; /* مهم للبارالاكس */
+}
+
+.reviews-cards {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+}
+
+.reviews-card {
+display: flex;
+align-items: center;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 12px;
+padding: 12px;
+/* box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); */
+height: 220px;
+width: 100%;
+position: relative;
+opacity: 0;                /* مخفية أولاً */
+transform: translateY(40px) scale(0.95);
+filter: blur(6px);
+transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.reviews-card.show {
+opacity: 1;
+transform: translateY(0) scale(1);
+filter: blur(0);
+}
+
+/* صور دائرية */
+.reviews-photo {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+border: 2px solid #e6c68a;
+flex-shrink: 0;
+margin: 0 16px;
+position: static;
+}
+
+.reviews-photo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+transition: transform 1.8s ease, box-shadow 1.5s ease;
+}
+
+/* Hover على الصور */
+.reviews-photo img:hover {
+box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+}
+
+/* النجوم */
+.stars i {
+display: inline-block;
+animation: none;
+transition: transform 0.3s, color 0.3s;
+color: var(--color-gold);
+}
+
+.stars i:hover {
+transform: scale(1.4);
+animation: sparkle 0.8s ease forwards;
+}
+
+
+
+/* زيك زاك */
+.reviews-card:nth-child(odd) {
+flex-direction: row;
+}
+.reviews-card:nth-child(even) {
+flex-direction: row-reverse;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* الجزء اليسار */
+.footer-left {
+  font-size: 14px;
+}
+.footer-left p {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.social a {
+  color: var(--color-yellow);
+  font-size: 20px;
+  transition: 0.3s;
+}
+.social a:hover {
+  color: var(--color-darkgray);
+}
+.footer-center {
+  width: 300px;
+  height: 300px;
+}
+/* النص بالنص */
+.footer-center img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* الجزء اليمين */
+.footer-right {
+  font-size: 14px;
+}
+.links {
+  margin-bottom: 15px;
+}
+.links a {
+  display: block;
+  color: var(--color-black);
+  margin-bottom: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.links a:hover {
+  color: var(--color-yellow);
+}
+
+.subscribe {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-black);
+}
+.subscribe button {
+  border: none;
+  border-radius: 8px;
+  padding: 0 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* حقوق النشر */
+.copyright {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--color-black);
+}
+
+
+/* تنسيقات الشاشات الكبيرة / اللوحية (1024px) */
+@media (max-width: 1024px) {
+    
+    /* Hero Layout */
+    .hero {
+        grid-template-columns: 1fr 400px; /* تصغير حجم العمود الأيمن قليلاً */
+        gap: 0.5rem;
+        height: auto; /* السماح بتغير الارتفاع حسب المحتوى */
+        margin-top: 1.5rem;
+    }
+    
+    .left {
+        padding: 2rem; /* تقليل المساحة الداخلية */
+    }
+
+    h1.hero-title {
+        font-size: 3.5rem; /* تصغير حجم العنوان الرئيسي */
+    }
+    
+    p.lead {
+        width: 100%; 
+        margin: 20px 0 40px; 
+    }
+    
+    /* Cards */
+    .card {
+        width: 8rem; /* تصغير الكروت قليلاً */
+        padding: 10px;
+    }
+    
+    /* Search Row */
+    .search-row {
+        width: 100%;
+    }
+
+    /* Right Side Visuals */
+    .right {
+        height: 20rem; /* تقليل ارتفاع الحاوية اليمنى */
+    }
+
+    .big-circle {
+        left: 20px;
+        width: 22rem; /* تصغير الدائرة الكبيرة */
+        height: 22rem;
+        transform: translateX(15px);
+    }
+    
+    .plate-frame {
+        width: 18rem; /* تصغير إطار الطبق */
+        height: 18rem;
+        margin-right: 80px;
+    }
+
+    .plate {
+        width: 15.5rem; /* تصغير الطبق */
+        height: 15.5rem;
+    }
+}
+
+/* تنسيقات الأجهزة اللوحية والموبايل (768px) */
+@media (max-width: 768px) {
+    /* Hero Layout (Stacked vertically) */
+    .hero {
+        grid-template-columns: 1fr; /* جعل التخطيط عمود واحد */
+        gap: 0; 
+        height: auto;
+        margin-top: 0;
+    }
+    
+    .left {
+        padding: 1.5rem 1.5rem 0; /* تقليل المساحة الداخلية العلوية */
+        order: 2; /* وضع المحتوى النصي تحت الصورة */
+    }
+
+    h1.hero-title {
+        font-size: 3rem; 
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    p.lead {
+        font-size: 1rem;
+        text-align: center; 
+        margin: 15px auto 30px; /* توسيط النص */
+    }
+    
+    /* Cards (Centered and adjusted) */
+    .cards {
+        justify-content: center; /* توسيط الكروت */
+    }
+    
+    .card {
+        width: 7rem; /* تصغير الكروت أكثر */
+        padding: 8px;
+    }
+    
+    /* Search Row (Centered and full width) */
+    .search-row {
+        width: 100%;
+        max-width: 25rem; /* تحديد عرض أقصى للتوسيط */
+        margin: 30px auto; 
+    }
+
+    /* Right Side Visuals (Display the visual on top, but simplified) */
+    .right {
+        order: 1; /* وضع الصورة في الأعلى */
+        height: 30vh; /* تحديد ارتفاع مرئي للصورة */
+        margin-bottom: 2rem;
+        overflow: hidden; /* إخفاء أي جزء يخرج عن الحدود */
+    }
+
+    /* Hiding the large decorative circle on mid-size mobiles for space */
+    .big-circle {
+        display: none; 
+    }
+    
+    /* Centering the plate visuals on the top section */
+    .plate-frame {
+        width: 15rem; 
+        height: 15rem;
+        margin-right: 0; /* إزالة الهامش الأيمن */
+        transform: scale(1.1); /* تكبير الإطار قليلاً لملء المساحة */
+    }
+
+    .plate {
+        width: 13.5rem; 
+        height: 13.5rem;
+        border: 4px solid rgba(255, 255, 255, 0.35);
+    }
+}
+
+/* تنسيقات الموبايل الصغير (480px) */
+@media (max-width: 480px) {
+    
+    .left {
+        padding: 1rem; 
+    }
+
+    h1.hero-title {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+    
+    p.lead {
+        font-size: 0.9rem;
+        margin: 15px auto 20px;
+    }
+    
+    /* Cards (Force stacking on multiple lines) */
+    .cards {
+        gap: 8px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    
+    .card {
+        width: 6.5rem; /* أصغر حجم للكروت */
+        padding: 6px;
+    }
+
+    .card .icon-wrap {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    /* Search Row (Full width elements) */
+    .search-row {
+        flex-direction: column; /* جعل حقل البحث والزر عموديين */
+        gap: 15px;
+        max-width: 90%; 
+        margin: 20px auto;
+    }
+    
+    .zip {
+        width: 100%; /* جعل حقل البحث بعرض كامل */
+    }
+    
+    .search-btn {
+        width: 100%; /* جعل زر البحث بعرض كامل */
+        padding: 12px 14px;
+    }
+
+    /* Right Side Visuals */
+    .right {
+        height: 25vh; /* تقليل ارتفاع قسم الصورة أكثر */
+        margin-bottom: 1rem;
+    }
+    
+    .plate-frame {
+        width: 12rem; /* تصغير إطار الطبق أكثر */
+        height: 12rem;
+        transform: scale(1);
+    }
+
+    .plate {
+        width: 10.5rem; /* تصغير الطبق أكثر */
+        height: 10.5rem;
+    }
+}
+/* تنسيقات الشاشات الكبيرة / اللوحية (1024px) */
+@media (max-width: 1024px) {
+    .about-us {
+        padding: 0 1.5rem;
+    }
+
+    /* Left Side: Image Adjustments */
+    .left-about {
+        min-width: 280px; /* تقليل الحد الأدنى للعرض */
+        justify-content: flex-start; /* تحريك الصورة إلى اليسار قليلاً */
+    }
+
+    .main-image-wrapper {
+        width: 300px; /* تصغير حجم الصورة الرئيسية */
+    }
+    
+    /* Overlay Circle (Adjust position) */
+    .overlay-circle-image {
+        right: 150px; /* تقريب الدائرة من الصورة الرئيسية */
+        width: 150px;
+        height: 150px;
+        bottom: -20px;
+    }
+
+    /* Experience Card (Adjust position) */
+    .experience-card {
+        left: 250px; /* تقريب البطاقة من الصورة الرئيسية */
+        top: 30px;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Right Side: Text Adjustments */
+    .right-about {
+        padding-left: 1rem;
+    }
+    
+    .section-label,
+    .featured-dishes-h2 {
+        font-size: 2rem; 
+    }
+}
+/* تنسيقات الأجهزة اللوحية والموبايل (768px) */
+@media (max-width: 768px) {
+    
+    .about-us {
+        padding: 0 1rem;
+    }
+
+    /* Content Layout (Stack vertically) */
+    .about-content {
+        flex-direction: column; /* جعل الترتيب عمودياً */
+    }
+
+    /* Left Side: Image (Top position) */
+    .left-about {
+        order: 1; /* الصورة أولاً */
+        width: 100%;
+        justify-content: center; /* توسيط الصورة */
+        margin-bottom: 3rem;
+    }
+
+    .main-image-wrapper {
+        width: 80%; /* زيادة عرض الصورة لتبدو أكبر على الموبايل */
+        max-width: 350px; /* حد أقصى للحجم */
+        transform: none; /* إلغاء التعديل الأولي لـ translateX */
+    }
+    
+    /* HIDE ABSOLUTE ELEMENTS */
+    .overlay-circle-image,
+    .experience-card {
+        display: none; /* إخفاء العناصر المطلقة لتجنب الفوضى على الشاشات الصغيرة */
+    }
+
+    /* Right Side: Text (Bottom position) */
+    .right-about {
+        order: 2; /* النص ثانياً */
+        width: 100%;
+        padding: 0;
+        text-align: center; /* توسيط النصوص */
+        transform: none; /* إلغاء التعديل الأولي لـ translateX */
+    }
+
+    .section-label,
+    .featured-dishes-h2 {
+        font-size: 2.2rem;
+        text-align: center; /* توسيط عنوان القسم */
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .features {
+        text-align: left; /* إعادة محاذاة القائمة لليسار لسهولة القراءة */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features li {
+        width: 80%; /* تحسين عرض العناصر */
+        justify-content: center;
+    }
+
+    .about-buttons {
+        justify-content: center; /* توسيط الأزرار */
+        margin-top: 1.5rem;
+    }
+}
+
+/* تنسيقات الموبايل الصغير (480px) */
+@media (max-width: 480px) {
+    .about-us {
+        padding: 0 0.5rem;
+    }
+    
+    /* Left Side: Image */
+    .main-image-wrapper {
+        width: 95%; /* زيادة عرض الصورة لملء الشاشة تقريباً */
+        margin: 0 auto;
+    }
+
+    /* Right Side: Text */
+    .section-label,
+    .featured-dishes-h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .features li {
+        font-size: 0.9rem;
+        width: 100%; /* جعل عناصر القائمة بعرض كامل */
+    }
+
+    /* Buttons (Stack or fill width) */
+    .about-buttons {
+        flex-direction: column; /* جعل الأزرار عمودية */
+        gap: 0.8rem;
+    }
+
+    .order-btn,
+    .read-more-btn {
+        width: 90%; /* جعل الأزرار بعرض شبه كامل */
+        margin: 0 auto;
+    }
+}
+/* تنسيقات الشاشات الكبيرة / اللوحية (1024px) */
+@media (max-width: 1024px) {
+    .featured-dishes {
+        padding: 1rem 1rem;
+    }
+
+    /* Main Layout */
+    .featured-dishes-content {
+        gap: 2rem;
+    }
+
+    /* Categories (Reduce size) */
+    .featured-dishes-categories {
+        width: 10rem;
+        padding: 1rem;
+    }
+
+    .featured-dishes-category-btn {
+        font-size: 15px;
+    }
+    
+    /* Cards (Slightly smaller gap) */
+    .featured-dishes-cards {
+        gap: 20px;
+    }
+
+    .featured-dishes-card {
+        min-width: 230px; /* تصغير عرض البطاقة قليلاً */
+        height: 230px;
+    }
+
+    .featured-dishes-card img {
+        width: 130px; /* تصغير حجم الصورة المطلة */
+        height: 130px;
+        top: -30px; /* تعديل بروز الصورة */
+    }
+
+    .featured-dishes-card h3 {
+        margin-top: 110px; /* تعديل الهامش بعد تصغير الصورة */
+    }
+}
+/* تنسيقات الأجهزة اللوحية والموبايل (768px) */
+@media (max-width: 768px) {
+    
+    .featured-dishes-h2 {
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    /* Main Layout (Stack vertically) */
+    .featured-dishes-content {
+        flex-direction: column; /* جعل الترتيب عمودياً */
+        gap: 0;
+        align-items: center; /* توسيط المحتوى */
+    }
+
+    /* Categories (Horizontal Scrollable List) */
+    .featured-dishes-categories {
+        width: 100%; /* بعرض كامل */
+        padding: 1rem 0;
+        flex-direction: row; /* جعل الأزرار أفقية */
+        justify-content: flex-start; /* محاذاة لليسار */
+        flex-wrap: nowrap;
+        overflow-x: auto; /* إضافة شريط تمرير أفقي لقائمة التصنيفات */
+        gap: 20px;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Hide scrollbar for category buttons if possible */
+    .featured-dishes-categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .featured-dishes-category-btn {
+        white-space: nowrap; /* منع التفاف النصوص */
+        font-size: 1rem;
+        padding: 0.3rem 0;
+    }
+    
+    /* Cards (Adjust for smaller screen) */
+    .featured-dishes-cards {
+        width: 100%;
+        padding: 0 1rem 1.5rem; /* إضافة مساحة للتمرير الأفقي وللصورة المطلة */
+       display: flex;
+      flex-direction: column;
+    }
+
+    .featured-dishes-card {
+        min-width: 200px; /* تصغير حجم البطاقة لتناسب شاشات الموبايل */
+        height: 200px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .featured-dishes-card img {
+        width: 110px; /* تصغير حجم الصورة المطلة أكثر */
+        height: 110px;
+        top: -25px; /* تعديل البروز */
+    }
+
+    .featured-dishes-card h3 {
+        margin-top: 90px;
+        font-size: 15px;
+    }
+
+    /* إلغاء الترتيب المتداخل (Staggering) لتجنب فوضى عند التمرير الأفقي */
+    .featured-dishes-card:nth-child(2),
+    .featured-dishes-card:nth-child(3) {
+        margin-top: 0;
+    }
+}
+/* تنسيقات الموبايل الصغير (480px) */
+@media (max-width: 480px) {
+   
+    .featured-dishes-h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Categories */
+    .featured-dishes-categories {
+        padding: 1rem 0;
+        gap: 15px;
+    }
+
+    .featured-dishes-category-btn {
+        font-size: 0.9rem;
+    }
+
+    /* Cards */
+    .featured-dishes-cards {
+        padding: 0 0.5rem 1.5rem; /* تقليل التبطين الجانبي */
+        display: flex;
+      flex-direction: column;
+    }
+    
+    .featured-dishes-card {
+        min-width: 180px; /* أصغر حجم للبطاقة */
+        height: 180px;
+        padding: 8px;
+    }
+
+    .featured-dishes-card img {
+        width: 90px; /* أصغر حجم للصورة */
+        height: 90px;
+        top: -20px; 
+    }
+
+    .featured-dishes-card h3 {
+        margin-top: 75px;
+        font-size: 14px;
+    }
+
+    .featured-dishes-card p {
+        font-size: 12px;
+    }
+}
+/* تنسيقات الشاشات الكبيرة / اللوحية (1024px) */
+@media (max-width: 1024px) {
+    .reviews-section {
+        max-width: 800px; /* تقليل العرض الأقصى قليلاً */
+    }
+
+    /* Cards Grid */
+    .reviews-cards {
+        gap: 20px;
+    }
+
+    .reviews-card {
+        height: 200px; /* تقليل ارتفاع البطاقة قليلاً */
+        padding: 10px;
+    }
+
+    /* Photo */
+    .reviews-photo {
+        width: 180px; /* تصغير حجم الصورة */
+        height: 180px;
+    }
+}
+/* تنسيقات الأجهزة اللوحية والموبايل (768px) */
+@media (max-width: 768px) {
+    .reviews-section {
+        max-width: 100%;
+        padding: 1rem 1.5rem; /* إضافة تبطين جانبي */
+    }
+    
+    /* Cards Layout (Stack vertically) */
+    .reviews-cards {
+        grid-template-columns: 1fr; /* عمود واحد */
+        gap: 40px; /* زيادة الفجوة بين البطاقات */
+    }
+
+    .reviews-card {
+        height: auto; /* السماح بارتفاع مرن */
+        min-height: 200px;
+        width: 95%; /* عرض شبه كامل */
+        margin: 0 auto;
+        
+        /* إلغاء الترتيب المتعرج وجعل الاتجاه قياسياً */
+        flex-direction: row !important; 
+    }
+    
+    /* Photo */
+    .reviews-photo {
+        width: 150px; /* تصغير حجم الصورة */
+        height: 150px;
+        margin-right: 15px;
+        margin-left: 0;
+    }
+
+    /* Content Area (النصوص) */
+    .reviews-content {
+        flex-grow: 1;
+    }
+}
+/* تنسيقات الموبايل الصغير (480px) */
+@media (max-width: 480px) {
+    .reviews-section {
+        padding: 1rem 1rem;
+    }
+
+    .reviews-card {
+        flex-direction: column !important; /* جعل الصورة والمحتوى عموديين */
+        text-align: center;
+        min-height: 250px; /* زيادة الحد الأدنى للارتفاع لاستيعاب المحتوى العمودي */
+    }
+
+    .reviews-photo {
+        width: 120px; /* تصغير حجم الصورة أكثر */
+        height: 120px;
+        margin: 0 auto 10px; /* توسيط الصورة وإضافة هامش سفلي */
+    }
+
+    /* توسيط النجوم والنصوص */
+    .stars {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+/* تنسيقات الشاشات الكبيرة / اللوحية (1024px) */
+@media (max-width: 1024px) {
+    footer {
+        grid-template-columns: 1fr 250px 1fr; /* تقليل عرض الجزء الأوسط قليلاً */
+        gap: 15px;
+        padding: 1rem;
+    }
+    
+    .footer-center {
+        width: 250px;
+        height: 250px;
+    }
+
+    .footer-center img {
+        width: 250px;
+        height: 250px;
+    }
+}
+/* تنسيقات الأجهزة اللوحية والموبايل (768px) */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr; /* عمود واحد */
+        gap: 30px;
+        padding: 2rem 1.5rem;
+    }
+    
+    /* إعادة ترتيب الأقسام عمودياً */
+    .footer-center {
+        order: 1; /* الشعار أو الصورة في المنتصف أولاً */
+        margin: 0 auto;
+    }
+    
+    .footer-left {
+        order: 2; /* السوشيال ميديا ثانياً */
+    }
+
+    .footer-right {
+        order: 3; /* الروابط والاشتراك ثالثاً */
+    }
+
+    .footer-center {
+        width: 200px; /* تصغير حجم الدائرة المركزية */
+        height: 200px;
+    }
+
+    .footer-center img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* توسيط جميع العناصر */
+    .footer-left,
+    .footer-right,
+    .social,
+    .subscribe {
+        text-align: center;
+        justify-content: center;
+    }
+}
+/* تنسيقات الموبايل الصغير (480px) */
+@media (max-width: 480px) {
+    .footer-center {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-center img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .links a {
+        font-size: 13px;
+    }
+
+    .subscribe {
+        flex-direction: column; /* جعل حقل الاشتراك والزر عموديين */
+        gap: 10px;
+    }
+
+    .subscribe input,
+    .subscribe button {
+        width: 80%; /* زيادة عرض الحقول */
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .copyright {
+        font-size: 11px;
+    }
+}

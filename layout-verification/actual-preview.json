@@ -1,0 +1,37 @@
+[
+  {
+    "client": 1144,
+    "inner": 1159,
+    "navColor": "rgb(255, 248, 240)",
+    "page": "/contact.html",
+    "scroll": 1144
+  },
+  {
+    "cards": 3,
+    "client": 1144,
+    "inner": 1159,
+    "page": "/menu.html",
+    "scroll": 1144
+  },
+  {
+    "client": 1144,
+    "inner": 1159,
+    "page": "/login.html",
+    "panelWidth": 400,
+    "scroll": 1144
+  },
+  {
+    "aboutTop": 1018.4000244140624,
+    "assets": [
+      "http://127.0.0.1:8766/style.css?v=9c12a7afd9ad",
+      "http://127.0.0.1:8766/responsive.css?v=92118b8484cc",
+      "http://127.0.0.1:8766/navigation.js?v=5fbc10006c61",
+      "http://127.0.0.1:8766/main.js?v=5477c2f5e011"
+    ],
+    "client": 1144,
+    "heroBottom": 985.2000274658204,
+    "inner": 1159,
+    "page": "/index.html",
+    "scroll": 1144
+  }
+]

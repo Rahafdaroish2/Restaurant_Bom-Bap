@@ -1,0 +1,1264 @@
+[
+  {
+    "page": "index",
+    "width": 1440,
+    "changedSections": [
+      "h2",
+      ".hero",
+      ".about-us",
+      ".featured-dishes",
+      ".reviews-section",
+      "footer"
+    ],
+    "pixels": {
+      "sameSize": false
+    },
+    "before": {
+      "h1": {
+        "x": 105,
+        "y": 139,
+        "width": 750.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 89,
+        "y": 928.1875,
+        "width": 1262,
+        "height": 75,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 57,
+        "y": 37,
+        "width": 1326,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 107,
+        "y": 52,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 404.453125,
+        "y": 90,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 989.421875,
+        "y": 89,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 57,
+        "y": 85,
+        "width": 1326,
+        "height": 810,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 57,
+        "y": 928.1875,
+        "width": 1326,
+        "height": 575.0625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 57,
+        "y": 1503.25,
+        "width": 1326,
+        "height": 511.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 270,
+        "y": 2014.34375,
+        "width": 900,
+        "height": 679.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 57,
+        "y": 2693.4375,
+        "width": 1326,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 105,
+        "y": 139,
+        "width": 750.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 89,
+        "y": 1019.5625,
+        "width": 1262,
+        "height": 75,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 57,
+        "y": 37,
+        "width": 1326,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 107,
+        "y": 52,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 404.453125,
+        "y": 90,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 989.421875,
+        "y": 89,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 57,
+        "y": 85,
+        "width": 1326,
+        "height": 901.375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 57,
+        "y": 1019.5625,
+        "width": 1326,
+        "height": 575.0625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 57,
+        "y": 1594.625,
+        "width": 1326,
+        "height": 511.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 270,
+        "y": 2105.71875,
+        "width": 900,
+        "height": 679.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 57,
+        "y": 2784.8125,
+        "width": 1326,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "menu",
+    "width": 1440,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 0,
+      "mean": [
+        0,
+        0,
+        0
+      ],
+      "bounds": null
+    },
+    "before": {
+      "h1": {
+        "x": 129.8125,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 56,
+        "y": 36,
+        "width": 1328,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 56,
+        "y": 36,
+        "width": 100,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 393.703125,
+        "y": 76,
+        "width": 396.09375,
+        "height": 24,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1027.484375,
+        "y": 70.5,
+        "width": 356.515625,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 56,
+        "y": 36,
+        "width": 1328,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 129.8125,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 56,
+        "y": 36,
+        "width": 1328,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 56,
+        "y": 36,
+        "width": 100,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 393.703125,
+        "y": 76,
+        "width": 396.09375,
+        "height": 24,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1027.484375,
+        "y": 70.5,
+        "width": 356.515625,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 56,
+        "y": 36,
+        "width": 1328,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    }
+  },
+  {
+    "page": "contact",
+    "width": 1440,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 0,
+      "mean": [
+        0,
+        0,
+        0
+      ],
+      "bounds": null
+    },
+    "before": {
+      "h2": {
+        "x": 342,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 50,
+        "y": 15,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 404.453125,
+        "y": 53,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1046.421875,
+        "y": 52,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 270,
+        "y": 36,
+        "width": 900,
+        "height": 819.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 342,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 50,
+        "y": 15,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 404.453125,
+        "y": 53,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1046.421875,
+        "y": 52,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 270,
+        "y": 36,
+        "width": 900,
+        "height": 819.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "login",
+    "width": 1440,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 0,
+      "mean": [
+        0,
+        0,
+        0
+      ],
+      "bounds": null
+    },
+    "before": {
+      "h2": {
+        "x": 560,
+        "y": 105.203125,
+        "width": 320,
+        "height": 66,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 520,
+        "y": 36,
+        "width": 400,
+        "height": 659.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 560,
+        "y": 105.203125,
+        "width": 320,
+        "height": 66,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 520,
+        "y": 36,
+        "width": 400,
+        "height": 659.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "index",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 53,
+      "mean": [
+        0.017276397600968416,
+        0.010004505062176736,
+        0.019947280455595906
+      ],
+      "bounds": [
+        269,
+        59,
+        1233,
+        2664
+      ]
+    },
+    "before": {
+      "h1": {
+        "x": 259,
+        "y": 216.3125,
+        "width": 922.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 243,
+        "y": 928.1875,
+        "width": 1434,
+        "height": 75,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 211,
+        "y": 37,
+        "width": 1498,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 261,
+        "y": 52,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 644.453125,
+        "y": 90,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1315.421875,
+        "y": 89,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 211,
+        "y": 85,
+        "width": 1498,
+        "height": 810,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 211,
+        "y": 928.1875,
+        "width": 1498,
+        "height": 573.359375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 211,
+        "y": 1501.546875,
+        "width": 1498,
+        "height": 511.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 510,
+        "y": 2012.640625,
+        "width": 900,
+        "height": 679.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 211,
+        "y": 2691.734375,
+        "width": 1498,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 259,
+        "y": 216.3125,
+        "width": 922.8125,
+        "height": 134.375,
+        "font": "800 64px / 67.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "h2": {
+        "x": 243,
+        "y": 928.1875,
+        "width": 1434,
+        "height": 75,
+        "font": "700 40px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 211,
+        "y": 37,
+        "width": 1498,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 261,
+        "y": 52,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 644.453125,
+        "y": 90,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1315.421875,
+        "y": 89,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".hero": {
+        "x": 211,
+        "y": 85,
+        "width": 1498,
+        "height": 810,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".about-us": {
+        "x": 211,
+        "y": 928.1875,
+        "width": 1498,
+        "height": 573.359375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(255, 248, 240)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(255, 248, 240)",
+        "boxShadow": "none"
+      },
+      ".featured-dishes": {
+        "x": 211,
+        "y": 1501.546875,
+        "width": 1498,
+        "height": 511.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".reviews-section": {
+        "x": 510,
+        "y": 2012.640625,
+        "width": 900,
+        "height": 679.09375,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      "footer": {
+        "x": 211,
+        "y": 2691.734375,
+        "width": 1498,
+        "height": 300,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "menu",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 0,
+      "mean": [
+        0,
+        0,
+        0
+      ],
+      "bounds": null
+    },
+    "before": {
+      "h1": {
+        "x": 354.46875,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 210,
+        "y": 36,
+        "width": 1500,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 210,
+        "y": 36,
+        "width": 100,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 633.703125,
+        "y": 76,
+        "width": 396.09375,
+        "height": 24,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1353.484375,
+        "y": 70.5,
+        "width": 356.515625,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 210,
+        "y": 36,
+        "width": 1500,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    },
+    "after": {
+      "h1": {
+        "x": 354.46875,
+        "y": 148,
+        "width": 668.375,
+        "height": 64,
+        "font": "700 48px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 210,
+        "y": 36,
+        "width": 1500,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 210,
+        "y": 36,
+        "width": 100,
+        "height": 104,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 633.703125,
+        "y": 76,
+        "width": 396.09375,
+        "height": 24,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1353.484375,
+        "y": 70.5,
+        "width": 356.515625,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".container": {
+        "x": 210,
+        "y": 36,
+        "width": 1500,
+        "height": 756.15625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "rgba(0, 0, 0, 0.5) 0px 10px 30px 0px"
+      }
+    }
+  },
+  {
+    "page": "contact",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 0,
+      "mean": [
+        0,
+        0,
+        0
+      ],
+      "bounds": null
+    },
+    "before": {
+      "h2": {
+        "x": 582,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 50,
+        "y": 15,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 644.453125,
+        "y": 53,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1526.421875,
+        "y": 52,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 510,
+        "y": 36,
+        "width": 900,
+        "height": 819.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 582,
+        "y": 195.890625,
+        "width": 348,
+        "height": 40.3125,
+        "font": "700 28.8px / 40.32px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 139,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".logo": {
+        "x": 50,
+        "y": 15,
+        "width": 100,
+        "height": 109,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-links": {
+        "x": 644.453125,
+        "y": 53,
+        "width": 387.53125,
+        "height": 33,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".nav-actions": {
+        "x": 1526.421875,
+        "y": 52,
+        "width": 343.578125,
+        "height": 35,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".contact-container": {
+        "x": 510,
+        "y": 36,
+        "width": 900,
+        "height": 819.390625,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "page": "login",
+    "width": 1920,
+    "changedSections": [],
+    "pixels": {
+      "sameSize": true,
+      "maximum": 1,
+      "mean": [
+        0.054780671296296296,
+        0.03630324074074074,
+        0.0784050925925926
+      ],
+      "bounds": [
+        0,
+        0,
+        1920,
+        900
+      ]
+    },
+    "before": {
+      "h2": {
+        "x": 800,
+        "y": 105.203125,
+        "width": 320,
+        "height": 66,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 760,
+        "y": 36,
+        "width": 400,
+        "height": 659.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    },
+    "after": {
+      "h2": {
+        "x": 800,
+        "y": 105.203125,
+        "width": 320,
+        "height": 66,
+        "font": "700 35.2px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(to right, rgb(244, 190, 114), rgb(253, 171, 84)) repeat scroll 0% 0% / auto padding-box text",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      },
+      ".auth-container": {
+        "x": 760,
+        "y": 36,
+        "width": 400,
+        "height": 659.203125,
+        "font": "16px Cairo, Poppins, sans-serif",
+        "color": "rgb(46, 46, 46)",
+        "background": "rgba(255, 255, 255, 0.4) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(46, 46, 46)",
+        "boxShadow": "none"
+      }
+    }
+  }
+]

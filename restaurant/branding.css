@@ -1,0 +1,53 @@
+/* Shared wordmark: retain the existing chef illustration and page typography. */
+.brand-wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  line-height: 1.25;
+  white-space: nowrap;
+  color: var(--color-black, #2e2e2e);
+}
+.brand-english {
+  font-family: "Poppins", "Cairo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.brand-korean {
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .12em;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.navbar .logo img { flex-shrink: 0; width: 80px; height: 80px; }
+.navbar .brand-wordmark { flex-direction: row; align-items: baseline; gap: 5px; }
+.navbar .brand-english { font-size: 14px; letter-spacing: .04em; }
+.navbar .brand-korean { font-size: 12px; }
+.contact-container .navbar .brand-wordmark { color: var(--color-white, #fff8f0); }
+footer .footer-center { height: auto; text-align: center; }
+.footer-center > .brand-wordmark { display: flex; margin-top: 8px; }
+.auth-brand { text-align: center; margin: 0 0 24px; }
+@media (min-width: 1024px) and (max-width: 1250px) {
+  .navbar .logo img { width: 64px; height: 64px; }
+
+}
+@media (max-width: 1023px) {
+  .navbar .brand-english { font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .navbar .logo { gap: 6px; }
+  .navbar .brand-english { font-size: 16px; }
+}
+
+@media (min-width: 1101px) {
+  h1.hero-title { margin-top: 48px; }
+}
+

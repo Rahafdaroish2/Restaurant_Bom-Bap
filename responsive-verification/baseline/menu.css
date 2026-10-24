@@ -1,0 +1,517 @@
+:root {
+  /* الألوان الأساسية */
+  --color-red: #d62828;
+  --color-orange: #fdab54;
+  --color-yellow: #f6f086;
+  --color-green: #70c37d;
+  --color-black: #2e2e2e;
+  --color-white: #fff8f0;
+  --color-accent1: #ff7e5f;
+  --bg-button: var(--color-red);
+  --color-btn: var(--color-white);
+  --font-h1: 3rem;
+  --font-p2: 1rem;
+  --color-transparent-card-bg: rgba(255, 255, 255, 0.4);
+  --color-transparent-border: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  margin: 0;
+  font-family: "Cairo", "Poppins", sans-serif;
+  background: var(--color-white);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.25rem;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("./images/about/KuroMoon\ 黒문\,\ São\ Paulo\,\ SP\,\ Brasil\ \(1\).jpg")
+    center/cover no-repeat;
+  filter: blur(10px) brightness(0.5);
+  z-index: -1;
+}
+.site {
+  width: 93.75rem;
+  max-width: calc(100% - 40px);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: visible;
+  border: 1px solid var(--bg);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeSlideDown 1s forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.logo img:hover {
+  transform: rotate(360deg) scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+}
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-black);
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover {
+  color: var(--color-accent1);
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-actions {
+  display: flex; /* لترتيب الأزرار أفقياً */
+  align-items: center;
+  gap: 10px; /* مسافة بين الأزرار */
+}
+.nav-actions button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: var(--color-white);
+  font-weight: bold;
+  margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.nav-actions button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 126, 95, 0.6);
+}
+.nav-actions button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: var(--bg);
+  transform: skewX(-25deg);
+  transition: all 0.5s ease;
+}
+.nav-actions button:hover::before {
+  left: 125%;
+}
+
+.container {
+  width: 93.75rem;
+  max-width: calc(100% - 40px);
+  display: flex;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+.left {
+  flex: 2;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.left h1 {
+  font-size: var(--font-h1);
+  background: linear-gradient(to right, #f4be72, var(--color-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 4rem;
+  z-index: 3;
+}
+
+.main-img-container {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 2;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+.main-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* تقليل المسافة بين الكاردات */
+  align-items: flex-start;
+  margin-left: 0; /* إلغاء التزييح لليسار الذي كان (-50px) */
+  margin-bottom: 2rem;
+  height: 350px; /* زيادة الارتفاع قليلاً لاستيعاب الكاردات */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card {
+  padding: 0.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* تم التعديل إلى flex-start لدمج العناصر */
+  gap: 0.5rem; /* تقليل المسافة بين العناصر الكبيرة */
+  width: 250px; /* **تصغير العرض كما طلبت** */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.menu-cards .card:nth-child(2) {
+  margin-left: 150px;
+}
+.card img {
+  width: 70px; /* تصغير حجم الصورة قليلاً ليتناسب مع البوردر */
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+
+  /* إلغاء الخصائص التي تسبب خروج الصورة */
+  position: static; /* أو إزالة هذا السطر لأن الـ default هو static */
+  top: auto; /* إلغاء الـ top */
+  left: auto; /* إلغاء الـ left */
+
+  /* إضافة بوردر ثابت حول الصورة */
+  border: 3px solid var(--color-white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  /* إضافة مسافة يمين الصورة */
+  margin-right: 10px;
+}
+
+.card span {
+  font-size: var(--font-p2);
+  color: var(--color-black);
+  font-weight: bold;
+
+  /* إلغاء الهوامش السابقة لتثبيت الاسم بجوار الصورة */
+  margin-left: 0;
+  margin-top: 0;
+}
+.card-details {
+  display: flex;
+  flex-direction: row; /* **التعديل الهام: ترتيب المحتوى أفقي** */
+  align-items: center;
+  flex-grow: 1; /* للسماح لها بالنمو */
+  justify-content: space-between; /* فصل الاسم/السعر عن الأيقونة */
+  gap: 0.5rem;
+}
+
+.card-details span {
+  font-size: 0.95rem; /* تصغير الخط قليلاً */
+  color: var(--color-black);
+  font-weight: bold;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* تنسيق السعر الجديد */
+.card-details p {
+  font-size: 0.85rem; /* تصغير الخط قليلاً */
+  color: var(--color-red);
+  font-weight: 600;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* تنسيق أيقونة الشراء الجديدة */
+.buy-icon {
+  background: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 50%;
+  width: 30px; /* **تصغير الأيقونة** */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.buy-icon:hover {
+  background: var(--color-red);
+}
+.circles {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 1rem;
+}
+.circle {
+  background: var(--color-white);
+  /* padding: 8px 15px; */
+  /* border-radius: 20px; */
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+.circle.active {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+.nav-buttons {
+  position: static;
+  transform: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  /* margin-top: 3rem; */
+  z-index: 3;
+}
+.nav-btn {
+  background: var(--color-orange);
+  color: var(--color-btn);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.nav-btn.disabled {
+  background: rgba(255, 255, 255, 0.5);
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* تنسيقات الشاشات الكبيرة / اللوحية (1024px) */
+@media (max-width: 1024px) {
+    .container {
+        /* تقليل عرض الـ max-width إلى حد معقول ليناسب شاشات 1024px */
+        width: 90%; 
+        max-width: 900px; 
+    }
+
+    /* Left Section (Reduce padding and margins) */
+    .left {
+        padding: 2rem 0;
+        flex: 1.5; /* تقليل حجمه قليلاً لصالح اليمين */
+    }
+
+    .left h1 {
+        font-size: 3.5rem; /* تصغير حجم العنوان */
+        margin-top: 3rem;
+    }
+
+    .main-img-container {
+        max-width: 350px; /* تصغير حجم الحاوية الدائرية */
+        height: 450px;
+    }
+    
+    /* Right Section (Menu Cards) */
+    .right {
+        flex: 1;
+        padding: 1.5rem;
+    }
+
+    .menu-cards {
+        height: 320px; /* تقليل الارتفاع قليلاً */
+    }
+    
+    /* Cards */
+    .card {
+        width: 230px; /* تصغير عرض البطاقة قليلاً */
+        padding: 0.4rem;
+    }
+
+    /* التداخل الأفقي (Staggering) */
+    .menu-cards .card:nth-child(2) {
+        margin-left: 100px; /* تقليل التداخل */
+    }
+}
+/* تنسيقات الأجهزة اللوحية والموبايل (768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* جعل الترتيب عمودياً */
+        max-width: 95%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* --- Left Section (Top position) --- */
+    .left {
+        order: 1; /* الجزء العلوي */
+        padding: 1.5rem 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-img-container {
+        max-width: 300px;
+        height: 380px;
+    }
+
+    /* --- Right Section (Bottom position) --- */
+    .right {
+        order: 2; /* الجزء السفلي */
+        padding: 1.5rem 1rem;
+        width: 100%;
+    }
+
+    /* Menu Cards (Vertical Scrollable List) */
+    .menu-cards {
+        height: auto; /* السماح بارتفاع مرن */
+        overflow-x: auto; /* إضافة تمرير أفقي */
+        flex-direction: row; /* جعل البطاقات أفقية الآن */
+        align-items: center;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        
+        /* إلغاء التداخل الأفقي وإضافة مساحة بين البطاقات */
+        gap: 20px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    /* إزالة التداخل المعقد */
+    .menu-cards .card:nth-child(2) {
+        margin-left: 0; 
+    }
+
+    .card {
+        min-width: 250px; /* ضمان عرض ثابت للتمرير */
+        width: 250px; 
+    }
+    
+    /* Buttons and Circles (Center them) */
+    .circles,
+    .nav-buttons {
+        gap: 3rem;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+/* تنسيقات الموبايل الصغير (480px) */
+@media (max-width: 480px) {
+    
+    .left h1 {
+        font-size: 2.2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .main-img-container {
+        max-width: 250px; /* تصغير حجم الحاوية الدائرية */
+        height: 300px;
+    }
+
+    .right {
+        padding: 1rem 0.5rem;
+    }
+
+    /* Menu Cards (Keep scrollable, reduce sizes) */
+    .menu-cards {
+        gap: 15px;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .card {
+        min-width: 200px; /* أصغر عرض للبطاقة */
+        width: 200px; 
+        padding: 0.3rem;
+    }
+
+    .card img {
+        width: 60px; /* تصغير حجم الصورة */
+        height: 60px;
+    }
+
+    .card-details span {
+        font-size: 0.85rem;
+    }
+
+    .card-details p {
+        font-size: 0.75rem;
+    }
+    
+    .buy-icon {
+        width: 25px; /* تصغير الأيقونة */
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    
+    /* Navigation */
+    .nav-buttons {
+        gap: 2rem;
+    }
+    
+    .nav-btn {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+}

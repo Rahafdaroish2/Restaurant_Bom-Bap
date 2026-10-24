@@ -1,0 +1,412 @@
+:root {
+  /* User-Provided Variables (Kept in Transliteration) */
+  --color-red: #d62828;
+  --color-orange: #fdab54;
+  --color-yellow: #f6f086;
+  --color-green: #70c37d;
+  --color-black: #2e2e2e;
+  --color-white: #fff8f0;
+  --color-accent1: #ff7e5f;
+  --bg-button: var(--color-red);
+  --color-btn: var(--color-white);
+  --font-h1: 3rem;
+  --font-p2: 1rem;
+  --color-transparent-card-bg: rgba(255, 255, 255, 0.4);
+  --color-transparent-border: rgba(255, 255, 255, 0.6);
+
+  /* Additional Structural Variables */
+  --curve-radius: 40px;
+  --color-map-card-bg: rgba(
+    46,
+    46,
+    46,
+    0.85
+  ); /* Black with high opacity for readability on map */
+  --color-shadow: rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Cairo", "Poppins", sans-serif;
+  background: var(--color-white);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.25rem;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("./images/about/KuroMoon\ 黒문\,\ São\ Paulo\,\ SP\,\ Brasil\ \(1\).jpg")
+    center/cover no-repeat;
+  filter: blur(10px) brightness(0.5);
+  z-index: -1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeSlideDown 1s forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* === Logo styles === */
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.logo img:hover {
+  transform: rotate(360deg) scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+}
+/* === Navigation links === */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-black);
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover {
+  color: var(--color-accent1);
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+/* === Buttons styles === */
+.nav-actions button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: var(--color-white);
+  font-weight: bold;
+  margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.nav-actions button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 126, 95, 0.6);
+}
+.nav-actions button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: var(--bg);
+  transform: skewX(-25deg);
+  transition: all 0.5s ease;
+}
+.nav-actions button:hover::before {
+  left: 125%;
+}
+/* Main Component Container */
+.contact-container {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  padding: 6rem 2rem ;
+}
+
+.info-map-section {
+  flex: 1;
+  min-height: 450px;
+  position: relative;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: var(--curve-radius) 0 0 var(--curve-radius);
+}
+
+.curved-split {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.info-cards-wrapper {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 300px;
+  padding-right: 20px;
+}
+
+.info-card {
+  background: var(--color-map-card-bg);
+  color: var(--color-white);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-size: var(--font-p2);
+  line-height: 1.5;
+  transition: transform 0.3s;
+}
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.info-card i {
+  font-size: 1.5rem;
+  color: var(--color-orange);
+}
+.info-card strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* ------------------- Right Section (The Form) ------------------- */
+.form-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Adjust text alignment for English */
+}
+
+.form-section h2 {
+  font-size: 1.8rem;
+  background: linear-gradient(to right, #f4be72, var(--color-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.form-section p {
+  font-size: var(--font-p2);
+  color: var(--color-white);
+  margin-bottom: 30px;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--color-black);
+  transition: border-color 0.3s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-accent1);
+  box-shadow: 0 0 0 2px rgba(255, 126, 95, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  color: var(--color-btn);
+  background: var(--color-orange);
+
+  /* Gradient defined by user's variables */
+  background: linear-gradient(to right, var(--color-accent1));
+  box-shadow: 0 8px 15px rgba(214, 40, 40, 0.4);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(214, 40, 40, 0.5);
+}
+
+.contact-container > *,
+.info-card > * {
+  min-width: 0;
+}
+
+.info-card {
+  overflow-wrap: anywhere;
+}
+
+.contact-container .nav-links a {
+  color: var(--color-white);
+}
+
+.contact-container .nav-links a:hover {
+  color: var(--color-accent1);
+}
+
+@media (max-width: 1100px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem 2rem;
+    max-width: 900px;
+    overflow: visible;
+  }
+
+  .navbar {
+    grid-column: 1 / -1;
+  }
+
+  .form-section {
+    padding: 1rem 0;
+  }
+
+  .info-map-section {
+    min-height: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  #map {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  .info-cards-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .submit-btn {
+    min-width: 0;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: 1rem;
+  }
+
+  .info-map-section {
+    grid-row: 2;
+  }
+
+  .form-section {
+    grid-row: 3;
+    padding: 1.5rem 1rem;
+    background: var(--color-white);
+  }
+
+  .form-section > p {
+    color: var(--color-black);
+  }
+
+  #map {
+    border-radius: var(--curve-radius) var(--curve-radius) 0 0;
+  }
+
+  .info-cards-wrapper {
+    max-width: 100%;
+  }
+
+  .form-section h2,
+  .form-section > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding-inline: 0.75rem;
+  }
+
+  .info-card {
+    gap: 0.75rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .info-card i {
+    flex-shrink: 0;
+  }
+
+  .form-section h2 {
+    font-size: 1.5rem;
+  }
+}

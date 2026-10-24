@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Menu </title>
+    <link rel="stylesheet" href="./menu.css?v=be72ae9fdcd3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <link rel="stylesheet" href="./responsive.css?v=92118b8484cc">
+  <script src="./navigation.js?v=5fbc10006c61" defer></script>
+</head>
+<body>
+   <div class="container" id="Menu">
+        <header class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <img src="./images/Vetores_de_Chef_-_Baixe_vetores_grátis_de_alta_qualidade_do_Freepik___Freepik-removebg-preview.png" alt="Logo">
+            </div>
+        
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation"><span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
+    <div class="nav-panel" id="mobile-navigation">
+    <nav class="nav-links" aria-label="Navigation links">
+                <a href="./index.html">Home</a>
+                <a href="#Menu">Menu</a>
+                <a href="./index.html">About Us</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        
+            <div class="nav-actions">
+               <a href="./login.html"> <button class="btn-login" aria-label="Login">Login</button></a>
+                <a href="./login.html"><button class="btn-Regiter" aria-label="Register">Register</button></a>
+                <button class="btn-reserve" aria-label="Reserve Table">Reserve</button>
+            </div>
+        </div>
+  </header>
+
+        <div class="left">
+            <h1>Discover Our Delicious Dishes</h1>
+            
+            <div class="main-img-container">
+                <img id="main-img" src="images/primary/Spicy_Pork_Belly_Bulgogi.png.png" alt="main dish">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="menu-cards" id="cards">
+                </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn" id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="circles" id="circles">
+                <div class="circle active" data-type="Meals"> <p>Meals</p></div>
+                <div class="circle" data-type="salads"> <p>Salads</p></div>
+                <div class="circle" data-type="desserts"> <p>Desserts</p></div>
+                <div class="circle" data-type="drinks"> <p>Drinks</p></div>
+                <div class="circle" data-type="snacks"> <p>Snacks</p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./menu.js?v=b22ff782e793"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+/* Preserve the existing desktop flex items while sharing one mobile disclosure. */
+.nav-panel {
+  display: contents;
+}
+
+.nav-panel[hidden] {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.navbar :is(.menu-toggle, .nav-links a, .nav-actions a, .nav-actions button):focus-visible {
+  outline: 3px solid var(--color-red);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1100px) {
+  body {
+    padding: clamp(0.75rem, 2.5vw, 2rem);
+    padding-left: max(clamp(0.75rem, 2.5vw, 2rem), env(safe-area-inset-left));
+    padding-right: max(clamp(0.75rem, 2.5vw, 2rem), env(safe-area-inset-right));
+  }
+
+  .navbar {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 0.75rem 1rem;
+    padding: 1rem clamp(0.75rem, 2vw, 1.5rem);
+  }
+
+  .logo img {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav-links,
+  .nav-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    margin: 0;
+    padding-inline: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .nav-actions button {
+    min-height: 44px;
+    margin: 0;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .navbar .logo {
+    justify-self: start;
+  }
+
+  .navbar .logo img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .nav-ready .menu-toggle {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color: var(--color-white);
+    background: linear-gradient(90deg, var(--color-accent1), #feb47b);
+    cursor: pointer;
+    justify-self: end;
+  }
+
+  .menu-toggle-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 16px;
+  }
+
+  .menu-toggle-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transition: transform 180ms ease, opacity 180ms ease;
+  }
+
+  .is-open .menu-toggle-icon span:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .is-open .menu-toggle-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .is-open .menu-toggle-icon span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav-panel:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    background: var(--color-white);
+    box-shadow: 0 6px 18px rgba(18, 18, 18, 0.04);
+    /* Only the expanded disclosure scrolls on short landscape screens. */
+    max-height: max(5.5rem, calc(100vh - 9rem));
+    max-height: max(5.5rem, calc(100dvh - 9rem));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .navbar .nav-panel .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+  }
+
+  .navbar .nav-panel .nav-links a {
+    justify-content: flex-start;
+    min-height: 44px;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    color: var(--color-black);
+    font-size: 18px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .navbar .nav-panel .nav-links a:hover {
+    color: var(--color-accent1);
+  }
+
+  .navbar .nav-panel .nav-actions {
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navbar .nav-panel .nav-actions > a,
+  .navbar .nav-panel .nav-actions > button {
+    flex: 1 1 5.5rem;
+    min-width: 0;
+  }
+
+  .navbar .nav-panel .nav-actions button {
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 10px 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-toggle-icon span {
+    transition: none;
+  }
+}
